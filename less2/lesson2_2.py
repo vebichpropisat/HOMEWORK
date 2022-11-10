@@ -9,7 +9,9 @@ def main():
     list_numbers.append("Test")
     print(list_numbers)
 
+
 # main()
+
 
 def my_list():
     names = ["Иван", "Мария", "Петр", "Андрей", "Лена"]
@@ -18,7 +20,9 @@ def my_list():
         if friend_name == name:
             print(f"Имя {friend_name} найдено")
 
+
 # my_list()
+
 
 def search_name():
     list_name = ["Иван", "Мария", "Петр", "Андрей", "Лена"]
@@ -28,5 +32,6 @@ def search_name():
         print(f"Имя {name} найдено")
     else:
         print(f"Имя {name} не найдено")
+
 
 search_name()

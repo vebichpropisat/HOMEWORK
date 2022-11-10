@@ -12,7 +12,9 @@ def main():
     play_list[1], play_list[3] = play_list[3], play_list[1]
     print(play_list)
 
+
 main()
+
 
 def func():
     # my_list = [1, 2, 3, 4]
@@ -22,4 +24,5 @@ def func():
     print(b)
     # print(c)
 
-#func()
+
+# func()

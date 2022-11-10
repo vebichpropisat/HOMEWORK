@@ -1,5 +1,6 @@
 import random
 
+
 def main():
     while True:
         random_number = random.randint(0, 10)
@@ -16,6 +17,7 @@ def main():
             break
         elif answer == "Да":
             continue
+
 
 if __name__ == "__main__":
     main()
