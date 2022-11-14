@@ -36,4 +36,5 @@ def func():
             f.write(json.dumps(contacts))
 
 
-func()
+if __name__ == "__func__":
+    func()
