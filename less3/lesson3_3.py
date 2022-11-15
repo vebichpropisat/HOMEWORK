@@ -1,5 +1,5 @@
 def func():
-    play_list = ['1', '2', "sound3", "sound5", "sound5"]
+    play_list = ["1", "2", "sound3", "sound5", "sound5"]
     # play_list = ['1', '2']
     ints = []
 
@@ -7,7 +7,7 @@ def func():
         for line in play_list:
             ints.append(int(line))
     except ValueError:
-        print('Это не число.')
+        print("Это не число.")
     # else:
     #     print('Всё хорошо.')
     # finally:

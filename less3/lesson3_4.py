@@ -1,7 +1,9 @@
 def main():
-    to_do = ['Task']
+    to_do = ["Task"]
     while True:
-        command = input("1 - Добвить\n2 - Удалить\n3 - Просмотр\n4 - Изменить\nВведите команду ")
+        command = input(
+            "1 - Добвить\n2 - Удалить\n3 - Просмотр\n4 - Изменить\nВведите команду "
+        )
         if command == "1":
             task = input("Что будем делать? ")
             to_do.append(task)
@@ -23,9 +25,11 @@ def main():
 
 
 def my_todo():
-    to_do = ['Task']
+    to_do = ["Task"]
     while True:
-        command = input("1 - Добвить\n2 - Удалить\n3 - Просмотр\n4 - Изменить\nВведите команду ")
+        command = input(
+            "1 - Добвить\n2 - Удалить\n3 - Просмотр\n4 - Изменить\nВведите команду "
+        )
         if command == "1":
             task = input("Что будем делать? ")
             to_do.append(task)

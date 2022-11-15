@@ -16,9 +16,9 @@ def sort_students(students):
     bad_grade = "Не поступили:"
     for name, grade in students.items():
         if grade >= 4:
-            good_grade += f'\n{name} - {grade}'
+            good_grade += f"\n{name} - {grade}"
         elif grade <= 3:
-            bad_grade += f'\n{name} - {grade}'
+            bad_grade += f"\n{name} - {grade}"
     print(good_grade)
     print(bad_grade)
 
@@ -27,16 +27,15 @@ def main():
     students = {}
     while True:
         command = input("1 - Добавте\n2 - Просмотреть\nВведит команду ")
-        if command == '1':
+        if command == "1":
             name, grade = add_students()
             students[name] = grade
-        elif command == '2':
+        elif command == "2":
             sort_students(students)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
-
 
 
 """

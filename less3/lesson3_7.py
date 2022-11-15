@@ -3,4 +3,4 @@ def calc(a: int, b: int) -> int:
     return c
 
 
-print(calc(3, '4'))
+print(calc(3, "4"))
