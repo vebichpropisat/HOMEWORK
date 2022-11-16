@@ -7,7 +7,7 @@ def name_input():
 
 
 def func():
-    with open("homework2_2_file.json") as f:
+    with open("homework2_2_file.json", encoding="utf-8") as f:
         contacts = json.load(f)
     while True:
         command = input(
@@ -18,13 +18,13 @@ def func():
             if contacts.get(name):
                 print("Такое имя уже существует")
                 continue
-            car = input("Введите название машины ")
+            car = input("Введите марку машины ")
             contacts[name] = car
         elif command == "2":
             name = name_input()
             if contacts.get(name):
                 contacts.pop(name)
-                print(f"Водитель {name} удален")
+                print(f"{name} уехал")
             else:
                 print(f"Водитель {name} не найдено")
         elif command == "3":
@@ -32,9 +32,10 @@ def func():
                 print(f"{name} - {car}")
         elif command == "4":
             break
-        with open("homework2_2_file.json", "w") as f:
+        with open("homework2_2_file.json", "w", encoding="utf-8") as f:
             f.write(json.dumps(contacts))
+            print("Данные сохранены")
 
 
-if __name__ == "__func__":
+if __name__ == "__main__":
     func()
