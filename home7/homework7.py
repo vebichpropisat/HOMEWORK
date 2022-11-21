@@ -1,12 +1,12 @@
 class Room:
-    def __init__(self, l=0, w=0):
+    def __init__(self, l: (int, float) = 0, w: (int, float) = 0) -> None:
         self.l = l
         self.w = w
 
-    def get_s(self):
+    def get_s(self) -> (int, float):
         return self.l * self.w
 
-    def __add__(self, other):
+    def __add__(self, other: (int, float)) -> (int, float):
         if isinstance(other, (int, float)):
             return self.get_s() + other
         elif isinstance(other, Room):
@@ -15,7 +15,7 @@ class Room:
 
 
 class House:
-    def __init__(self, *args):
+    def __init__(self) -> None:
         self.rooms = []
         while True:
             command = input("Добавить комнату? (д/н) ")
@@ -27,7 +27,7 @@ class House:
                 break
         self.s = 0
 
-    def get_s(self):
+    def get_s(self) -> (int, float):
         for room in self.rooms:
             self.s += room.get_s()
         return self.s
