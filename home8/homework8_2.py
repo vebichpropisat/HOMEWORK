@@ -54,9 +54,6 @@ class Player:
 
 
 class Dealer(Player):
-    # def get_cards(self, cards: DeskCard):
-    #     while self.count < 18:
-    #         self.hand = cards.get_card()
     def get_cards(self, cards: DeskCard):
         while self.count < 21:
             _card = cards.get_card()

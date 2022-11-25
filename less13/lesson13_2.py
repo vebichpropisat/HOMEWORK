@@ -82,22 +82,25 @@ from functools import wraps
 
 def my_decorator(func):
     """Декоратор"""
+
     @wraps(func)
     def decorated():
         """Функция decorated"""
         func()
+
     return decorated
 
 
 @my_decorator
 def wrapped():
     """Оборачивемая функция"""
-    print('функция wrapped')
+    print("функция wrapped")
 
 
 # print('старт')
 # print(wrapped.__name__)
 # print(wrapped.__doc__)
+
 
 @my_decorator
 class My:

@@ -12,6 +12,8 @@ def memorize(fun):
             return rv
 
     return wrapper
+
+
 #
 #
 # @memorize
